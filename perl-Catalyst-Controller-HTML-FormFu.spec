@@ -33,6 +33,7 @@ BuildRequires: perl(Task::Weaken)
 BuildRequires: perl(Template)
 BuildRequires: perl(Test::WWW::Mechanize)
 BuildRequires: perl(Test::WWW::Mechanize::Catalyst)
+BuildRequires: perl(YAML::Syck)
 BuildRequires: perl(namespace::autoclean)
 
 BuildArch: noarch
