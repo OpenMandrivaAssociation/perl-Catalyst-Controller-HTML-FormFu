@@ -27,12 +27,14 @@ BuildRequires: perl(HTML::FormFu)
 BuildRequires: perl(MRO::Compat)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Regexp::Assemble)
+BuildRequires: perl(Regexp::Copy)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Task::Weaken)
 BuildRequires: perl(Template)
 BuildRequires: perl(Test::WWW::Mechanize)
 BuildRequires: perl(Test::WWW::Mechanize::Catalyst)
 BuildRequires: perl(namespace::autoclean)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -52,11 +54,10 @@ directory, run:
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -70,5 +71,3 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
