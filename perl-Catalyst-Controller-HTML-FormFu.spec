@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Hidden text field which contains a unique token
 License:    GPL+ or Artistic
@@ -39,6 +39,8 @@ BuildRequires: perl(namespace::autoclean)
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+Requires: perl(Catalyst::Component::InstancePerContext)
 
 %description
 As of version 0.02000, the HTML::FormFu manpage doesn't use the TT template
