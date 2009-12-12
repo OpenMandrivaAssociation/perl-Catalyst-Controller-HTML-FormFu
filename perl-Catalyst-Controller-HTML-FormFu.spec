@@ -1,9 +1,9 @@
 %define upstream_name    Catalyst-Controller-HTML-FormFu
-%define upstream_version 0.06000
+%define upstream_version 0.06001
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Hidden text field which contains a unique token
 License:    GPL+ or Artistic
