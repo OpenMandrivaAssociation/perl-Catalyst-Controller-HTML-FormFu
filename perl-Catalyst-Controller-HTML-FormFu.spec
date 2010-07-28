@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Hidden text field which contains a unique token
 License:    GPL+ or Artistic
@@ -28,7 +28,6 @@ BuildRequires: perl(HTML::FormFu)
 BuildRequires: perl(MRO::Compat)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Regexp::Assemble)
-BuildRequires: perl(Regexp::Copy)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Task::Weaken)
 BuildRequires: perl(Template)
@@ -72,6 +71,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes
+%doc Changes META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
