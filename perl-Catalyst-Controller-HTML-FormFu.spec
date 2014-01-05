@@ -1,15 +1,15 @@
 %define upstream_name    Catalyst-Controller-HTML-FormFu
-%define upstream_version 0.09003
+%define upstream_version 0.09004
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Hidden text field which contains a unique token
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Catalyst/Catalyst-Controller-HTML-FormFu-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Catalyst::Action::RenderView)
@@ -116,3 +116,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sun Nov 29 2009 cpan2dist 0.06000-1mdv
 - initial mdv release, generated with cpan2dist
+
