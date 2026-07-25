@@ -1,15 +1,15 @@
 %define upstream_name    Catalyst-Controller-HTML-FormFu
-%define upstream_version 0.09003
+%define upstream_version 2.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Hidden text field which contains a unique token
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/FormFu/Catalyst-Controller-HTML-FormFu
+Source0:	https://cpan.metacpan.org/authors/id/N/NI/NIGELM/Catalyst-Controller-HTML-FormFu-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
