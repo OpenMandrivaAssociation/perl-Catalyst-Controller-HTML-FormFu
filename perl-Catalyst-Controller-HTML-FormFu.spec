@@ -1,15 +1,13 @@
 %define upstream_name    Catalyst-Controller-HTML-FormFu
-%define upstream_version 2.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	2.04
+Release:	2
 
 Summary:	Hidden text field which contains a unique token
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/FormFu/Catalyst-Controller-HTML-FormFu
-Source0:	https://cpan.metacpan.org/authors/id/N/NI/NIGELM/Catalyst-Controller-HTML-FormFu-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NI/NIGELM/Catalyst-Controller-HTML-FormFu-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -56,7 +54,7 @@ the template files. To create the files in the default 'root/formfu'
 directory, run:
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
